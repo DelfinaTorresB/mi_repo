@@ -1,8 +1,6 @@
 $title-color: #d11736;
 $secondary-color: #ff9558;
 $white-color: #ffffff;
-$heading-color: #111111;
-$heading-color2: #d4d4d4;
 $para-color: #6b6b6b;
 $title-font: 'Archivo Narrow', sans-serif;
 $para-font:'Montserrat', sans-serif;
@@ -37,7 +35,7 @@ img {
 }
 
 body{
-  background-color: $title-color;
+  background-image: url(../css/fotos/ladrillos.jpg);
       .header{
         color: black;
         text-align: right; 
@@ -55,17 +53,17 @@ body{
 			  text-decoration: none;
               a{
 				display: inline-block;
-				word-spacing: 25%;
-                text-decoration: none;
-                text-transform: uppercase;
+				word-spacing: 50%;
+				text-decoration: none;
+				@include font(uppercase, bold)
 				letter-spacing: 1px;
-                color:white;
+                color: #111111;;
                 font-size: 18px;
 				font-family: $title-font;
 				transition: 1s;
 			  }
 			  a:hover{
-				  color: midnightblue;
+				  color: $title-color;
 			  }
             }
           }
@@ -111,7 +109,8 @@ background-position: center;}
     letter-spacing: 3px;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 3px;
+	padding: 7px;
+	margin: 30px;
     color: white;
     background: black;
     border-radius: 7px;
@@ -132,6 +131,7 @@ background-position: center;}
 		.nosotros__texto--titulo {
 			font-family: $title-font;
 			color: $title-color;
+			background: none;
 			@include font(uppercase, bold);
 			text-align: center;
 	 	}
@@ -155,6 +155,7 @@ background-position: center;}
 		h2{
 			font-family: $title-font;
 			color: $title-color;
+			background: none;
 			@include font(uppercase, bold);
 			text-align: center;
 		}
@@ -193,96 +194,26 @@ background-position: center;}
 	background-color: $white-color;
 	border: #111111 solid;
 	padding: 4px;
+	margin: 30px;
 }
-
-/*.testimonial-section {
-	position: relative;
-	&:after {
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		width: 1100px;
-		height: 540px;
-		background: url(../img/testimonial/testimonial-bg.png);
-		content: "";
-		-webkit-transform: translate(-550px, -270px);
-		-ms-transform: translate(-550px, -270px);
-		transform: translate(-550px, -270px);
-	}
-	.section-title {
-		margin-bottom: 35px;
-	}
-}
-.testimonial-slider {
-	&.owl-carousel {
-		.owl-item img {
-			display: inline-block;
-		}
-		.owl-nav {
-			button {
-				font-size: 36px;
-				color: #bdbdbd;
-				position: absolute;
-				left: -110px;
-				top: 30%;
-				&:hover {
-					color: #ed8064;
-				}
-				&.owl-next {
-					left: auto;
-					right: -110px;
-				}
-			}
-		}
-	}
-	.testimonial-item {
-		text-align: center;
-		p {
-			font-size: 22px;
-			color: $heading-color;
-			line-height: 30px;
-			margin-bottom: 60px;
-		}
-		.ti-pic {
-			width: 120px;
-			height: 120px;
-			margin: 0 auto;
-			position: relative;
-			z-index: 1;
-			img {
-				width: 120px;
-				height: 120px;
-				border-radius: 50%;
-			}
-			.quote {
-				position: absolute;
-				left: 20px;
-				top: -22px;
-				z-index: -1;
-				img {
-					width: auto;
-					height: auto;
-					border-radius: initial;
-				}
-			}
-		}
-		.ti-author {
-			margin-top: 25px;
-			h4 {
-				font-size: 22px;
-				color: $heading-color;
-				font-weight: 600;
-				margin-bottom: 8px;
-			}
-			span {
-				font-size: 16px;
-				color: #f15d44;
-			}
-		}
+.ubicacion{
+	align-items: center;
+	.ubicacion__mapa{
+		margin-left: 45px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}	
+	.ubicacion__texto{
+			font-family: $para-font;
+			color: black;
+			background-color: #ffffff;
+			border: solid black;
+			letter-spacing: 2px;
+			text-align: center;
+			line-height: 1.2;
+			margin-top: 25PX;
 	}
 }
-*/
-
 .footer{
   	background-color: #272727;
   	text-align: center;
